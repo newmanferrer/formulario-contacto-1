@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <title>Formulario de Contacto No.1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span class="brand-span">Acme</span> Web Desing</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3 class="company-info-title">Acme Web Desing</h3>
+          <ul class="company-info-ul">
+            <li>44 Somethin st</li>
+            <li>(555) 555-5555</li>
+            <li>test@acme.test</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3 class="contact-title">Email Us</h3>
+          <form class="contact-form" id="contact-form">
+            <p class="contact-form-paragraph">
+              <label class="contact-form-label">Name</label>
+              <input class="contact-form-input" type="text" name="name" required minlength="1" maxlength="30" autocomplete="off">
+            </p>
+            <p class="contact-form-paragraph">
+              <label class="contact-form-label">Company</label>
+              <input class="contact-form-input" type="text" name="company" required minlength="1" maxlength="30" autocomplete="off">
+            </p>
+            <p class="contact-form-paragraph">
+              <label class="contact-form-label">Email Address</label>
+              <input class="contact-form-input" type="email" name="email" required autocomplete="off">
+            </p>
+            <p class="contact-form-paragraph">
+              <label class="contact-form-label">Phone Number</label>
+              <input class="contact-form-input" type="text" name="phone" required minlength="7" maxlength="20" autocomplete="off">
+            </p>
+            <p class="contact-form-paragraph full">
+              <label class="contact-form-label">Message</label>
+              <textarea class="contact-form-textarea" name="message" rows="5" required minlength="1" maxlength="250" autocomplete="off"></textarea>
+            </p>
+            <p class="contact-form-paragraph full">
+              <button class="contact-form-button">Submit</button>
+           </p>
+          </form>
+        </div>
+      </div>
+      <div class="message-container none" id="message-container">Messaje for users</div>
+    </div>
+    <script src="js/scripts.js" type="module"></script>
+  </body>
+</html>
